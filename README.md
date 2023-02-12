@@ -1,4 +1,4 @@
-# Repositorio de Estudos para estudo
+# Repositorio de Estudos
 
 ![Olá mundo!](https://www.freecodecamp.org/news/content/images/size/w2000/2022/06/helloWorld.png)
 
