@@ -1,0 +1,38 @@
+FAZENDO UM SERVIDOR DE ARQUIVOS NO LINUX UBUNTU:
+
+Passo 1: Garantir os passos abaixo
+Passo 2: Reiniciar e ativar o deamon
+
+MONTANDO UM DISCO AUTOMATICAMENTE
+
+	lsblk
+
+	- Escolha o disco, por exemplo o "sdb"
+	
+	nano /etc/fstab
+
+	- No fim do texto adicione:
+	/dev/sdb /disk2 ext4 defaults 0 0
+	O Diretorio, onde será montado, sistema de arquivos, parametros
+
+DANDO PERMISSÕES PARA PASTAS OU ARQUIVOS
+
+	chmod 777 publica/ (Aqui estou dando acesso total a pasta publica)
+
+FAZENDO UMA PASTA FICAR DISPONIVEL PARA TODA A REDE
+
+	nano /etc/samba/smb.conf
+	
+	[publica] *não precisa ter o mesmo nome da pasta
+	path = /disk2/publica
+	writable = yes
+	guest ok = yes *se qualquer pessoa pode acessar
+	guest only = yes
+
+	Reiniciar o samba:
+	systemctl restart smbd
+	systemctl status smbd
+	
+	systemctl enable smbd
+	
+	

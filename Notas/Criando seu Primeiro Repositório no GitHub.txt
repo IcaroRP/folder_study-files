@@ -1,0 +1,11 @@
+Criando seu Primeiro Repositório no GitHub
+
+Criar um repositorio no github; por uma descrição; deixar em publico; caso seja necessário um README.
+
+	git init
+	git clone +link
+	git status (opcional)
+
+	git add .
+	git commit -m "Mensagem"
+	git push origin main

@@ -1,0 +1,9 @@
+INSTALANDO O APACHE PARA SERVIDOR HTTPS
+	apt install apache2 -y
+
+	verificar se estar ativo:
+	systemctl status apache2
+
+No site basico que o apache disponibiliza diz em qual pasta esta o "index.html"
+
+Em "var/www/html"

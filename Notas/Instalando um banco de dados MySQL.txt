@@ -1,0 +1,20 @@
+INSTALANDO O MYSQL NO LINUX SERVER
+
+	apt install mysql-server-8.0 -y
+
+	Acessando o banco de dados como root e saindo:
+mysql -u root -p
+exit
+
+	Listar os bancos de dados:
+show databases;
+
+	Criando e usando um banco de dados:
+create database MeuBanco;
+use MeuBanco;
+
+	Criando e vendo tabela:
+create table Pessoas (PessoaID int, Nome varchar(50), Sobrenome varchar(50), Endereco varchar(100), Cidade varchar(50));
+show tables;
+select * FROM Pessoas;
+insert into Pessoas (PessoaID, Nome, sobrenome, Endereco, Cidade) VALUES (1,'Carlos', 'da Silva', 'Av. do carmo, 500', 'Jaboticaba');
